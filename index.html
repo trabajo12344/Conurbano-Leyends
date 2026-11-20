@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081322">
+  <meta name="description" content="CONURBANO LEYENDS: un videojuego arcade de pelea donde distintas épocas de Argentina chocan en una batalla por el tiempo.">
+  <title>CONURBANO LEYENDS — La historia se enfrenta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="ruido" aria-hidden="true"></div>
+  <div class="barra-progreso" id="barraProgreso"></div>
+  <header class="encabezado" id="inicio">
+    <a class="marca" href="#inicio" aria-label="Conurbano Leyends, inicio">
+      <span class="marca-simbolo"><img src="assets/marca/compastudios-logo.png" alt="CompasStudios" class="logo-compastudios"></span>
+  <span class="marca-texto">CONURBANO <b>LEYENDS</b><small>UN JUEGO FUERA DE ÉPOCA</small></span>
+    </a>
+    <button class="menu-movil" id="menuMovil" aria-label="Abrir navegación" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="navegacion" id="navegacion">
+      <a href="#universo">UNIVERSO</a><a href="#personajes">PERSONAJES</a><a href="#combate">COMBATE</a><a href="#escenarios">ESCENARIOS</a><a href="#multimedia">MULTIMEDIA</a>
+    </nav>
+    <div class="acciones-cabecera">
+      <a class="boton boton-mini boton-linea" href="#descarga">JUGAR <span>↗</span></a>
+      <div class="menu-cuenta">
+        <button class="tres-puntos" id="menuCuenta" aria-label="Abrir menú de usuario" aria-expanded="false">•••</button>
+        <div class="desplegable" id="desplegable">
+          <button data-modal="acceso">Iniciar sesión</button>
+          <button data-modal="registro">Crear cuenta</button>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="portada">
+      <div class="portada-fondo"></div>
+      <div class="portada-lineas" aria-hidden="true"></div>
+      <div class="portada-contenido aparece">
+        <div class="etiqueta"><i></i> VIDEOJUEGO DE PELEA · HECHO EN ARGENTINA</div>
+        <h1>LA HISTORIA<br>SE <span>ENFRENTA.</span></h1>
+        <p class="bajada">Una fisura en el tiempo. Ocho leyendas. Un solo ring.<br>Argentina nunca tuvo un combate como este.</p>
+        <div class="portada-acciones">
+          <a href="#universo" class="boton boton-principal">DESCUBRÍ EL UNIVERSO <span>→</span></a>
+          <a href="#multimedia" class="boton boton-fantasma"><span class="play">▶</span> VER PRESENTACIÓN</a>
+        </div>
+        <div class="datos-portada"><div><b>08</b><span>PERSONAJES</span></div><i></i><div><b>∞</b><span>ÉPOCAS EN COLISIÓN</span></div><i></i><div><b>AR</b><span>IDENTIDAD ARGENTINA</span></div></div>
+      </div>
+      <div class="sello-portada"><span>ARCADE</span><b>FIGHT</b><span>EDITION · 2026</span></div>
+      <a href="#universo" class="bajar">DESLIZÁ PARA DESCUBRIR <span>↓</span></a>
+    </section>
+
+    <section class="cinta" aria-label="Frase del juego"><div class="cinta-pista"><span>UNA GRIETA EN LA REALIDAD</span> ✦ <span>UN PAÍS, MIL HISTORIAS</span> ✦ <span>EL COMBATE RECIÉN COMIENZA</span> ✦ <span>UNA GRIETA EN LA REALIDAD</span> ✦ <span>UN PAÍS, MIL HISTORIAS</span> ✦</div></section>
+
+    <section class="seccion universo" id="universo">
+      <div class="encabezado-seccion aparece"><span class="numero">01 / EL UNIVERSO</span><span class="linea"></span><span class="sobrelinea">EL COMIENZO DE TODO</span></div>
+      <div class="universo-grid">
+        <div class="universo-texto aparece">
+          <h2>EL TIEMPO<br>SE <em>ROMPIÓ.</em></h2>
+          <p class="texto-grande">Cuando las épocas dejan de tener fronteras, las leyendas tienen que defender su lugar en la historia.</p>
+          <p>Una entidad divina y desconocida abrió una misteriosa <strong>Fisura del Tiempo</strong>. Su aparición quebró la realidad y arrastró a figuras de distintas generaciones hacia un mismo presente, justo en el instante más intenso de sus vidas.</p>
+          <p>Ahora, personalidades de mundos, épocas y estilos completamente diferentes deberán enfrentarse en una Argentina transformada. ¿Quién dominará el nuevo orden?</p>
+          <a class="enlace-flecha" href="#personajes">CONOCÉ A QUIENES LLEGARON <span>↗</span></a>
+        </div>
+        <div class="fisura-visual aparece"><img src="assets/escenarios/obelisco-fisura.png" alt="El Obelisco rodeado por una fisura temporal en una Buenos Aires alternativa"><div class="marco-esquina"></div><div class="sello-fisura"><small>ANOMALÍA DETECTADA</small><b>TIEMPO<br>INestable</b><span>BS. AS. · 00:00:00</span></div></div>
+      </div>
+      <div class="frase-universo"><span>“</span><p>EL PASADO, EL PRESENTE Y LO QUE TODAVÍA NO EXISTE…<b> TODO SE DECIDE EN EL RING.</b></p></div>
+    </section>
+
+    <section class="seccion personajes" id="personajes">
+      <div class="encabezado-seccion aparece"><span class="numero">02 / SELECCIÓN</span><span class="linea"></span><span class="sobrelinea">ELEGÍ TU LEYENDA</span></div>
+      <div class="titulo-doble aparece"><div><h2>OCHO NOMBRES.<br><em>UN DESTINO.</em></h2></div><p>Distintas épocas, personalidades y formas de pelear. Cada combatiente llega con su propia historia y una manera única de dominar el escenario.</p></div>
+      <div class="rejilla-personajes">
+        <article class="personaje p-momo aparece"><img class="personaje-foto" src="assets/personajes/momo.png" alt="" aria-hidden="true"><div class="personaje-num">01</div><div class="personaje-icono">M</div><div class="personaje-info"><span>EL CAOS DIGITAL</span><h3>MOMO</h3><p>Reflejos rápidos · presión constante</p></div><span class="personaje-flecha">↗</span></article>
+        <article class="personaje p-messi aparece"><img class="personaje-foto" src="assets/personajes/messi.png" alt="" aria-hidden="true"><div class="personaje-num">02</div><div class="personaje-icono">10</div><div class="personaje-info"><span>EL GENIO DEL FÚTBOL</span><h3>MESSI</h3><p>Precisión · contraataque</p></div><span class="personaje-flecha">↗</span></article>
+        <article class="personaje p-sanmartin aparece"><img class="personaje-foto" src="assets/personajes/sanmartin.png" alt="" aria-hidden="true"><div class="personaje-num">03</div><div class="personaje-icono">SM</div><div class="personaje-info"><span>EL LIBERTADOR</span><h3>SAN MARTÍN</h3><p>Disciplina · estrategia</p></div><span class="personaje-flecha">↗</span></article>
+        <article class="personaje p-fort aparece"><img class="personaje-foto" src="assets/personajes/ricardofort.png" alt="" aria-hidden="true"><div class="personaje-num">04</div><div class="personaje-icono">RF</div><div class="personaje-info"><span>EL COMANDANTE</span><h3>RICARDO FORT</h3><p>Presencia · golpes de impacto</p></div><span class="personaje-flecha">↗</span></article>
+        <article class="personaje p-duki aparece"><img class="personaje-foto" src="assets/personajes/duki.png" alt="" aria-hidden="true"><div class="personaje-num">05</div><div class="personaje-icono">D</div><div class="personaje-info"><span>EL FENÓMENO URBANO</span><h3>DUKI</h3><p>Ritmo · combos encadenados</p></div><span class="personaje-flecha">↗</span></article>
+        <article class="personaje p-mirtha aparece"><img class="personaje-foto" src="assets/personajes/mirtha.png" alt="" aria-hidden="true"><div class="personaje-num">06</div><div class="personaje-icono">ML</div><div class="personaje-info"><span>LA LEYENDA DE LA TV</span><h3>MIRTHA LEGRAND</h3><p>Elegancia · control del rival</p></div><span class="personaje-flecha">↗</span></article>
+        <article class="personaje p-colapinto aparece"><img class="personaje-foto" src="assets/personajes/colapinto.png" alt="" aria-hidden="true"><div class="personaje-num">07</div><div class="personaje-icono">C</div><div class="personaje-info"><span>VELOCIDAD SIN LÍMITES</span><h3>COLAPINTO</h3><p>Velocidad · movilidad</p></div><span class="personaje-flecha">↗</span></article>
+        <article class="personaje p-nicki aparece"><img class="personaje-foto" src="assets/personajes/nickinickole.png" alt="" aria-hidden="true"><div class="personaje-num">08</div><div class="personaje-icono">NN</div><div class="personaje-info"><span>LA VOZ DE UNA GENERACIÓN</span><h3>NICKI NICOLE</h3><p>Agilidad · ataques sorpresa</p></div><span class="personaje-flecha">↗</span></article>
+      </div>
+      <p class="nota-personajes">* Los estilos y atributos son conceptos de presentación sujetos al diseño final del videojuego.</p>
+    </section>
+
+    <section class="seccion combate" id="combate">
+      <div class="encabezado-seccion aparece"><span class="numero">03 / SISTEMA DE COMBATE</span><span class="linea"></span><span class="sobrelinea">TÉCNICA, REFLEJOS Y ACTITUD</span></div>
+      <div class="combate-intro aparece"><h2>NO ES SOLO<br><em>PEGAR.</em></h2><p>Aprendé el ritmo del rival, combiná técnicas y encontrá el momento justo para lanzar tu movimiento especial. Un sistema inspirado en las disciplinas de striking.</p></div>
+      <div class="tecnicas">
+        <article class="tecnica aparece"><span class="tecnica-num">01</span><div class="tecnica-grafico grafico-boxeo">拳</div><div><h3>BOXEO</h3><p>Guardia, desplazamientos, golpes directos y combinaciones rápidas.</p></div><span class="tecnica-plus">+</span></article>
+        <article class="tecnica aparece"><span class="tecnica-num">02</span><div class="tecnica-grafico grafico-muay">ศ</div><div><h3>MUAY THAI</h3><p>Una disciplina intensa con ataques de corta distancia y presión.</p></div><span class="tecnica-plus">+</span></article>
+        <article class="tecnica aparece"><span class="tecnica-num">03</span><div class="tecnica-grafico grafico-taek">跆</div><div><h3>TAEKWONDO</h3><p>Patadas dinámicas, alcance y movimientos explosivos.</p></div><span class="tecnica-plus">+</span></article>
+        <article class="tecnica aparece"><span class="tecnica-num">04</span><div class="tecnica-grafico grafico-mix">✦</div><div><h3>OTRAS TÉCNICAS</h3><p>Un universo de estilos y recursos para crear tu propia estrategia.</p></div><span class="tecnica-plus">+</span></article>
+      </div>
+      <div class="barra-combate"><span>LEÉ A TU OPONENTE</span><div class="barra-animada"><i></i></div><span>ENCONTRÁ TU MOMENTO</span></div>
+    </section>
+
+    <section class="seccion escenarios" id="escenarios">
+      <div class="encabezado-seccion aparece"><span class="numero">04 / CAMPOS DE BATALLA</span><span class="linea"></span><span class="sobrelinea">ARGENTINA, COMO NUNCA LA VISTE</span></div>
+      <div class="titulo-doble aparece"><div><h2>EL PAÍS ES<br><em>EL ESCENARIO.</em></h2></div><p>De los paisajes de montaña a las calles de Buenos Aires: cada lugar es parte de una realidad que ya no obedece al tiempo.</p></div>
+      <div class="galeria-escenarios">
+        <button class="escenario escenario-grande aparece" data-imagen="assets/escenarios/obelisco-fisura.png" data-titulo="BUENOS AIRES: FISURA CENTRAL" data-desc="El corazón de la ciudad quedó en el centro de la anomalía temporal."><img src="assets/escenarios/obelisco-fisura.png" alt="Obelisco de Buenos Aires y fisura temporal"><span class="escenario-etiqueta">01 · ZONA CRÍTICA</span><b>BUENOS AIRES <i>↗</i></b></button>
+        <button class="escenario aparece" data-imagen="assets/escenarios/cabildo.png" data-titulo="EL CABILDO" data-desc="Un punto de encuentro entre la historia y el presente."><img src="assets/escenarios/cabildo.png" alt="Cabildo argentino ilustrado"><span class="escenario-etiqueta">02 · CENTRO HISTÓRICO</span><b>EL CABILDO <i>↗</i></b></button>
+        <button class="escenario aparece" data-imagen="assets/escenarios/cordillera.png" data-titulo="CORDILLERA" data-desc="Un territorio de altura donde la fuerza y la resistencia son protagonistas."><img src="assets/escenarios/cordillera.png" alt="Cordillera nevada"><span class="escenario-etiqueta">03 · TIERRAS DEL SUR</span><b>CORDILLERA <i>↗</i></b></button>
+        <button class="escenario aparece" data-imagen="assets/escenarios/costa.png" data-titulo="LA COSTA" data-desc="El atardecer es testigo de un nuevo enfrentamiento."><img src="assets/escenarios/costa.png" alt="Playa argentina al atardecer"><span class="escenario-etiqueta">04 · COSTA ARGENTINA</span><b>LA COSTA <i>↗</i></b></button>
+        <button class="escenario aparece" data-imagen="assets/escenarios/instituto.png" data-titulo="EL INSTITUTO" data-desc="Un espacio moderno atravesado por los efectos de la fisura."><img src="assets/escenarios/instituto.png" alt="Edificio institucional"><span class="escenario-etiqueta">05 · ZONA URBANA</span><b>EL INSTITUTO <i>↗</i></b></button>
+        <button class="escenario aparece" data-imagen="assets/escenarios/telefe.png" data-titulo="ESTUDIOS DE TELEVISIÓN" data-desc="Las luces del espectáculo también forman parte de esta nueva realidad."><img src="assets/escenarios/telefe.png" alt="Edificio de Telefe al atardecer"><span class="escenario-etiqueta">06 · MUNDO DEL ESPECTÁCULO</span><b>ESTUDIOS TV <i>↗</i></b></button>
+        <button class="escenario aparece" data-imagen="assets/escenarios/escuela-nocturna.png" data-titulo="LA ESCUELA" data-desc="Un escenario nocturno donde la ciudad parece haberse detenido."><img src="assets/escenarios/escuela-nocturna.png" alt="Edificio escolar iluminado de noche"><span class="escenario-etiqueta">07 · ÚLTIMO TURNO</span><b>LA ESCUELA <i>↗</i></b></button>
+      </div>
+    </section>
+
+    <section class="seccion multimedia" id="multimedia">
+      <div class="encabezado-seccion aparece"><span class="numero">05 / CENTRO MULTIMEDIA</span><span class="linea"></span><span class="sobrelinea">MIRÁ, APRENDÉ Y DESCUBRÍ</span></div>
+      <div class="multimedia-grid">
+          <div class="multimedia-principal aparece"><span class="etiqueta etiqueta-clara">MATERIAL OFICIAL</span><h2>EL PRIMER<br><em>VISTAZO.</em></h2><p>Teaser e intro oficial de Conurbano Leyends.</p>
+            <div class="video-contenedor"><h3>01 / TEASER OFICIAL</h3><div class="video-marco"><iframe src="https://www.youtube.com/embed/1TlXZqw57JM" title="Teaser oficial de Conurbano Leyends" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><a class="video-youtube" href="https://www.youtube.com/watch?v=1TlXZqw57JM" target="_blank" rel="noopener noreferrer">VER EN YOUTUBE ↗</a></div>
+            <div class="video-contenedor"><h3>02 / INTRO OFICIAL</h3><div class="video-marco"><video controls preload="metadata" playsinline><source src="assets/multimedia-intro.mp4" type="video/mp4">Tu navegador no permite reproducir este video.</video></div><p class="video-ayuda">Reproducí la intro directamente desde la página.</p></div></div>
+        <div class="recursos aparece">
+          <a class="recurso" href="#descarga"><span class="recurso-icono">↓</span><div><small>01 / DESCARGAS</small><h3>Juego completo</h3><p>Accedé a la versión publicada.</p></div><b>↗</b></a>
+          <a class="recurso" href="#contacto"><span class="recurso-icono">▤</span><div><small>02 / GUÍAS</small><h3>Tutoriales</h3><p>Aprendé controles y mecánicas.</p></div><b>↗</b></a>
+          <a class="recurso" href="#contacto"><span class="recurso-icono">⌘</span><div><small>03 / DOCUMENTACIÓN</small><h3>Archivos del proyecto</h3><p>Material complementario y novedades.</p></div><b>↗</b></a>
+          <a class="recurso" href="#contacto"><span class="recurso-icono">✦</span><div><small>04 / DETRÁS DE ESCENA</small><h3>Proceso creativo</h3><p>Conocé cómo se construye el juego.</p></div><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="descarga" id="descarga">
+      <div class="descarga-fondo"></div><div class="descarga-contenido aparece"><span class="etiqueta"><i></i> PREPARATE PARA EL COMBATE</span><h2>LA FISURA<br>ESTÁ <em>ABIERTA.</em></h2><p>El próximo capítulo de esta historia se escribe en el ring.</p><a class="boton boton-principal boton-descarga" href="#" id="botonDescarga" aria-disabled="true">DESCARGA PRÓXIMAMENTE <span>↓</span></a><small>El enlace de descarga se habilitará cuando se publique una versión del juego.</small></div>
+      <div class="descarga-sello">HECHO<br><b>EN AR</b></div>
+    </section>
+
+    <section class="seccion equipo" id="equipo">
+      <div class="encabezado-seccion aparece"><span class="numero">06 / EL EQUIPO</span><span class="linea"></span><span class="sobrelinea">DE LA IDEA AL VIDEOJUEGO</span></div>
+      <div class="titulo-doble aparece"><div><h2>DE ACÁ.<br><em>PARA TODOS.</em></h2></div><p>Somos un grupo de estudiantes de la E.E.S.T. N.º 3 Víctor Mercante de Hurlingham. Creamos este proyecto en base a un sueño de nuestro compañero Cori Cuenca ademas para unir creatividad, tecnología y entretenimiento.</p></div>
+      <div class="equipo-lista">
+        <div><span>01</span><b class="integrante-nombre">David Gautos Fretes<a class="integrante-instagram" href="https://www.instagram.com/gautos._.david/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de David Gautos Fretes"><img src="assets/marca/instagram.png" alt="Instagram"></a></b><p>Animación 2D, efectos visuales.</p></div>
+        <div><span>02</span><b class="integrante-nombre">Tiziano Joel Cori Cuenca<a class="integrante-instagram" href="https://www.instagram.com/tizi_joel97/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Tiziano Joel Cori Cuenca"><img src="assets/marca/instagram.png" alt="Instagram"></a></b><p>Programación del gameplay, diseño conceptual y bocetado de personajes.</p></div>
+        <div><span>03</span><b class="integrante-nombre">Franco Ignacio Faini<a class="integrante-instagram" href="https://www.instagram.com/__faini__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Franco Ignacio Faini"><img src="assets/marca/instagram.png" alt="Instagram"></a></b><p>Diseño de interfaz de usuario, menús e iconografía.</p></div>
+        <div><span>04</span><b class="integrante-nombre">Luka Guzmán Haziel<a class="integrante-instagram" href="https://www.instagram.com/__luka.___7/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Luka Guzmán Haziel"><img src="assets/marca/instagram.png" alt="Instagram"></a></b><p>Encargado del sonido y escenarios.</p></div>
+      </div>
+      <div class="sello-estudio"><img src="assets/marca/compastudios.png" alt="Compa Studios"><span>UNA PRODUCCIÓN INDEPENDIENTE<br><b>COMPÁ STUDIOS · 2026</b></span></div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contacto-texto aparece"><span class="numero">07 / CONTACTO</span><h2>¿TENÉS ALGO<br><em>PARA DECIRNOS?</em></h2><p>Ideas, consultas o simplemente querés seguir el proyecto. Nos gustaría leerte.</p><div class="redes"><a href="https://www.instagram.com/_compastudios_/" target="_blank" rel="noopener">INSTAGRAM ↗</a><a href="https://www.youtube.com/@compaStudios_8" target="_blank" rel="noopener">YOUTUBE ↗</a></div></div>
+      <form class="form-contacto aparece" id="formContacto">
+        <label for="nombre">TU NOMBRE</label><input id="nombre" name="nombre" placeholder="¿Cómo te llamás?" required maxlength="70">
+        <label for="correo">CORREO ELECTRÓNICO</label><input id="correo" name="correo" type="email" placeholder="nombre@correo.com" required>
+        <label for="asunto">¿SOBRE QUÉ QUERÉS HABLAR?</label><select id="asunto" name="asunto"><option>Consulta general</option><option>Prensa y difusión</option><option>Colaboraciones</option><option>Comentarios sobre el juego</option></select>
+        <label for="mensaje">TU MENSAJE</label><textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje..." required maxlength="1200"></textarea>
+        <button class="boton boton-principal" type="submit">PREPARAR MENSAJE <span>↗</span></button><p class="form-nota" id="estadoFormulario">Se abrirá tu aplicación de correo para enviar el mensaje.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <a class="marca" href="#"><span class="marca-simbolo"><img src="assets/marca/compastudios-logo.png" alt="CompasStudios" class="logo-compastudios"></span><span class="marca-texto">CONURBANO <b>LEYENDS</b><small>LA HISTORIA SE ENFRENTA</small></span></a>
+    <p>© 2026 COMPA STUDIOS · PROYECTO DE VIDEOJUEGO INDEPENDIENTE</p>
+    <a href="#iniciobien" class="volver">VOLVER ARRIBA ↑</a>
+  </footer>
+
+  <div class="modal-fondo" id="modalFondo" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloModal">
+      <button class="modal-cerrar" id="cerrarModal" aria-label="Cerrar">×</button>
+      <span class="numero">ACCESO DE JUGADOR</span><h2 id="tituloModal">BIENVENIDO<br><em>AL COMBATE.</em></h2>
+      <form id="formCuenta"><label for="usuario">USUARIO O CORREO</label><input id="usuario" type="text" placeholder="Tu usuario" required><label for="clave">CONTRASEÑA</label><input id="clave" type="password" placeholder="Tu contraseña" required minlength="6"><label class="aceptar"><input id="recordar" type="checkbox"> Mantener sesión iniciada</label><button class="boton boton-principal" type="submit" id="enviarCuenta">CONTINUAR <span>→</span></button><p id="estadoCuenta" class="form-nota">Esta interfaz es demostrativa: todavía no está conectada a un sistema de usuarios.</p></form>
+    </div>
+  </div>
+  <div class="visor-fondo" id="visorFondo" aria-hidden="true"><button id="cerrarVisor" aria-label="Cerrar imagen">×</button><img id="visorImagen" src="" alt=""><div><b id="visorTitulo"></b><p id="visorDescripcion"></p></div></div>
+  <div class="aviso" id="aviso" role="status"></div>
+</body>
+</html>
